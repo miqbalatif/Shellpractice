@@ -1,10 +1,18 @@
 #!/bin/bash
 
+######################
+# Author: Atif
+# Time: 23 March, 2024
+#
+# This script will report AWS resource usage
+######################
+
+
 # Set AWS profile name (optional, if you have multiple AWS profiles configured)
-AWS_PROFILE="your_aws_profile_name"
+AWS_PROFILE="musmanshamshad"
 
 # Set the path to the log file where usage data will be saved
-LOG_FILE="/path/to/usage.log"
+LOG_FILE="/home/ubuntu/Shellpractice/awsusage.txt"
 
 # Function to gather EC2 instance usage
 get_ec2_usage() {
@@ -40,6 +48,5 @@ main() {
     echo "----------------------------------------" >> $LOG_FILE
 }
 
-# Call the main function
+#call the main function
 main
-
